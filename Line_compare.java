@@ -33,19 +33,25 @@ public class {
 
                 System.out.println("The length of the line is "+line_two_length);
 
-		if ( line_two_length == line_one_length ) {
+		int num = line_one_length > line_two_length ? +1 : line_one_length < line_two_length ? -1 : 0;
+        
+		 switch(num) {
 
-			System.out.println("THE LINES ARE EQUAL IN LENGTH");
-		}
+				case 1 :
+				System.out.println("Line One is greater");
+				break;
 
-		else {
+				case -1 :
+				System.out.println("Line two is Greater");
+				break;
 
-			System.out.println("THE LINES ARE NOT EQUAL IN LENGTH");
-
-		}
+				default :
+				System.out.println("Both Line Lengths are Equal");
+				break;
+			}
+                
 
 
 		}
 
 }
-
